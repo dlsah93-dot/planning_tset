@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#f8f9ff",
+          "primary-container": "#1e293b",
+          "surface-bright": "#f8f9ff",
+          "primary": "#091426",
+          "on-tertiary-fixed-variant": "#6e3900",
+          "outline": "#75777d",
+          "error": "#ba1a1a",
+          "background": "#f8f9ff",
+          "on-secondary-fixed-variant": "#6a3b19",
+          "on-primary-fixed": "#111c2d",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#fcb88c",
+          "on-tertiary-fixed": "#2f1500",
+          "surface-container": "#e5eeff",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed": "#311300",
+          "secondary-container": "#ffba8e",
+          "on-surface-variant": "#45474c",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#240f00",
+          "surface-container-highest": "#d3e4fe",
+          "primary-fixed-dim": "#bcc7de",
+          "on-primary-container": "#8590a6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-container": "#7a4825",
+          "tertiary-fixed-dim": "#ffb77d",
+          "surface-tint": "#545f73",
+          "inverse-surface": "#213145",
+          "on-primary-fixed-variant": "#3c475a",
+          "secondary-fixed": "#ffdbc7",
+          "on-background": "#0b1c30",
+          "surface-dim": "#cbdbf5",
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "on-tertiary-container": "#d97705",
+          "secondary": "#86522e",
+          "surface-container-high": "#dce9ff",
+          "inverse-primary": "#bcc7de",
+          "surface-container-low": "#eff4ff",
+          "outline-variant": "#c5c6cd",
+          "on-surface": "#0b1c30",
+          "tertiary-container": "#422000",
+          "surface-variant": "#d3e4fe",
+          "inverse-on-surface": "#eaf1ff",
+          "primary-fixed": "#d8e3fb",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-lg": "1.25rem",
+          "space-md": "0.75rem",
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "margin-desktop": "2rem",
+          "gutter": "1rem",
+          "space-xl": "2rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "numeric-table": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Inter"
+          ],
+          "numeric-hero": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "numeric-table": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl-mobile": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "numeric-hero": [
+            "1.75rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-gutter-desktop flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary tracking-tight">프렙 카페</span><span class="font-label-sm text-label-sm text-secondary px-space-xs py-0.5 bg-secondary-fixed rounded-lg font-medium">본점</span></div><div class="h-4 w-px bg-outline-variant"></div><span class="font-label-sm text-label-sm px-space-sm py-0.5 bg-surface-container-high text-on-surface-variant rounded-lg">1매장 · 1사용자 모드</span><div class="flex items-center gap-space-xs px-space-sm py-0.5 bg-surface-container-low text-on-surface-variant rounded-lg"><span class="material-symbols-outlined text-sm text-on-surface-variant">event_available</span><span class="font-numeric-table text-numeric-table">2026-09-18</span><span class="font-label-sm text-label-sm font-semibold text-secondary">(마감완료)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low text-on-surface-variant rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm">로컬 자동저장 됨</span></div><div class="flex items-center gap-space-xs"><button class="flex items-center gap-1 h-9 px-space-md bg-secondary text-on-secondary hover:bg-tertiary font-label-md text-label-md rounded-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-base">add</span><span>판매 기록</span></button><button class="flex items-center gap-1 h-9 px-space-md bg-primary-container text-surface-container-lowest hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-base">swap_vert</span><span>재고 변동</span></button></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WiIOLMkRmja_UFGsGGJRJ5Jd1wktqA6KlC9hU_sWt6EDHcT6qjELQKqEgONOB9fGdwGr9snY2sk9kViQ-x560nCsTK6V20QbJR0P7tuAJXFfkjZ8IHkl_nOmb5zP69pQ8gLrsWbt5tXf9Bf_zhjUcoqJpauwk_UILmO2q49LzQoIHJIT2Qm-ynefLi8zw4g30eC8Itm3c1-eExWN2XBbIMEl6w1SoVCr9v3Jdcz7Xs87a3D0IThu6a7Po"></div></div></div><nav class="flex items-center gap-1 pt-1" data-active-classes="bg-primary-container text-surface-container-lowest font-semibold rounded-lg"><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="dashboard" href="#">대시보드 / 기간손익</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="sales" href="#">판매 기록 관리</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="profitability" href="#">메뉴 수익성 분석</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="expenses" href="#">비용 관리</a><a aria-current="page" class="px-space-md py-1.5 transition-colors bg-primary-container text-surface-container-lowest font-semibold rounded-lg" data-path="inventory" href="#">재고 &amp; 실사 관리</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="backup" href="#">데이터 백업·복원</a></nav></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full relative">
+<!-- BACKGROUND INVENTORY SCREEN (/inventory) -->
+<div class="w-full px-gutter-desktop py-space-xl flex flex-col gap-space-xl opacity-40 select-none pointer-events-none filter blur-[1px]">
+<!-- Top Action Bar & Title -->
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed px-space-xs py-0.5 rounded-lg">원자재 수불부</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ERP 연동 · 실시간 수불부 기준</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary">재고 잔량 및 실사 관리</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md bg-surface-container-highest text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-base">download</span>엑셀 내보내기
+        </button>
+<button class="h-9 px-space-md bg-primary-container text-surface-container-lowest font-label-md text-label-md rounded-lg flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-base">swap_vert</span>재고 변동 등록
+        </button>
+</div>
+</div>
+<!-- Summary KPI Bento Grid -->
+<div class="grid grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">총 관리 원재료</span>
+<span class="material-symbols-outlined text-base">inventory_2</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-md">
+<span class="font-numeric-hero text-numeric-hero text-primary">11</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">개 품목</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs">정규 규격 9종 · 부자재 2종</span>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">안전재고 미달 품목</span>
+<span class="material-symbols-outlined text-base text-error">warning</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-md">
+<span class="font-numeric-hero text-numeric-hero text-error">2</span>
+<span class="font-body-sm text-body-sm text-error">건 경고</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold mt-space-xs">바닐라 시럽 (0.8일분) · 뚜껑 (1.2일분)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">당월 실사 오차율</span>
+<span class="material-symbols-outlined text-base text-secondary">analytics</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-md">
+<span class="font-numeric-hero text-numeric-hero text-primary">-1.42</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs">허용 오차 범위 내 (기준 ±3.0%)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-md text-label-md">최근 전수 실사일</span>
+<span class="material-symbols-outlined text-base">fact_check</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-md">
+<span class="font-numeric-hero text-numeric-hero text-primary">D-3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2026-09-15</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-xs">금일 마감 실사 진행 권장</span>
+</div>
+</div>
+<!-- Underlying Inventory Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">원재료별 잔량 및 안전재고 현황표</span>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container-lowest rounded-lg text-on-surface">분류: 전체</span>
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container-lowest rounded-lg text-on-surface">정렬: 안전재고 잔여일순</span>
+</div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead class="bg-surface-container text-on-surface-variant font-label-md text-label-md">
+<tr>
+<th class="py-space-md px-space-lg">품목 코드</th>
+<th class="py-space-md px-space-lg">원재료명</th>
+<th class="py-space-md px-space-lg">단위</th>
+<th class="py-space-md px-space-lg text-right">현재 장부 잔량</th>
+<th class="py-space-md px-space-lg text-right">일평균 소진량</th>
+<th class="py-space-md px-space-lg text-right">안전재고 기준</th>
+<th class="py-space-md px-space-lg text-center">잔여 예상일</th>
+<th class="py-space-md px-space-lg text-center">상태</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<tr class="bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-numeric-table">RM-ESP-01</td>
+<td class="py-space-md px-space-lg font-medium">에스프레소 블렌드 원두</td>
+<td class="py-space-md px-space-lg">g</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table font-semibold">3,450 g</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">850 g</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">2,550 g</td>
+<td class="py-space-md px-space-lg text-center font-numeric-table">4.1일</td>
+<td class="py-space-md px-space-lg text-center"><span class="px-space-sm py-0.5 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm">적정</span></td>
+</tr>
+<tr class="bg-surface-container-low">
+<td class="py-space-md px-space-lg font-numeric-table">RM-MLK-01</td>
+<td class="py-space-md px-space-lg font-medium">1등급 신선 우유 (1000ml)</td>
+<td class="py-space-md px-space-lg">ml</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table font-semibold">18,000 ml</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">7,500 ml</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">15,000 ml</td>
+<td class="py-space-md px-space-lg text-center font-numeric-table">2.4일</td>
+<td class="py-space-md px-space-lg text-center"><span class="px-space-sm py-0.5 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm">적정</span></td>
+</tr>
+<tr class="bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-numeric-table">RM-SYR-02</td>
+<td class="py-space-md px-space-lg font-medium">프리미엄 바닐라 시럽</td>
+<td class="py-space-md px-space-lg">ml</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table font-semibold text-error">450 ml</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">550 ml</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">1,200 ml</td>
+<td class="py-space-md px-space-lg text-center font-numeric-table text-error font-semibold">0.8일</td>
+<td class="py-space-md px-space-lg text-center"><span class="px-space-sm py-0.5 bg-error-container text-on-error-container rounded-lg font-label-sm text-label-sm font-semibold">발주필요</span></td>
+</tr>
+<tr class="bg-surface-container-low">
+<td class="py-space-md px-space-lg font-numeric-table">PKG-CUP-16</td>
+<td class="py-space-md px-space-lg font-medium">테이크아웃 종이컵 16oz</td>
+<td class="py-space-md px-space-lg">개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table font-semibold">620 개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">190 개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">500 개</td>
+<td class="py-space-md px-space-lg text-center font-numeric-table">3.3일</td>
+<td class="py-space-md px-space-lg text-center"><span class="px-space-sm py-0.5 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm">적정</span></td>
+</tr>
+<tr class="bg-surface-container-lowest">
+<td class="py-space-md px-space-lg font-numeric-table">PKG-LID-01</td>
+<td class="py-space-md px-space-lg font-medium">아이스 전용 투명 돔 리드</td>
+<td class="py-space-md px-space-lg">개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table font-semibold text-error">180 개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">150 개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">450 개</td>
+<td class="py-space-md px-space-lg text-center font-numeric-table text-error font-semibold">1.2일</td>
+<td class="py-space-md px-space-lg text-center"><span class="px-space-sm py-0.5 bg-error-container text-on-error-container rounded-lg font-label-sm text-label-sm font-semibold">위험</span></td>
+</tr>
+<tr class="bg-surface-container-low">
+<td class="py-space-md px-space-lg font-numeric-table">PKG-STR-01</td>
+<td class="py-space-md px-space-lg font-medium">친환경 생분해 빨대</td>
+<td class="py-space-md px-space-lg">개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table font-semibold">1,400 개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">220 개</td>
+<td class="py-space-md px-space-lg text-right font-numeric-table">600 개</td>
+<td class="py-space-md px-space-lg text-center font-numeric-table">6.4일</td>
+<td class="py-space-md px-space-lg text-center"><span class="px-space-sm py-0.5 bg-surface-container-high text-on-surface rounded-lg font-label-sm text-label-sm">여유</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- MODAL SCRIM & DIALOG OVERLAY (Raised Level 3 Elevation) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-gutter bg-primary/60 backdrop-blur-sm animate-fade-in" id="audit-modal-scrim">
+<!-- Modal Card Container (Max Width 640px for precise High-Density SaaS input) -->
+<div class="relative w-full max-w-[620px] bg-surface-container-lowest rounded-xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-lowest flex items-start justify-between">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight">재고 기록 등록 &amp; 실사(Audit) 조정</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">입고, 폐기, 또는 매장에서 직접 센 실제 재고 수량을 등록합니다.</p>
+</div>
+<button aria-label="닫기" class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-xl leading-none">close</span>
+</button>
+</div>
+<!-- Segmented Action Mode Tabs (입고 / 폐기 / 실사조정) -->
+<div class="px-space-lg pt-space-xs pb-space-sm bg-surface-container-low">
+<div class="grid grid-cols-3 gap-1 p-1 bg-surface-container rounded-lg">
+<!-- Inbound (Disabled State Preview) -->
+<button class="py-1.5 px-space-sm flex items-center justify-center gap-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">move_to_inbox</span>
+<span>입고 (+)</span>
+</button>
+<!-- Waste (Disabled State Preview) -->
+<button class="py-1.5 px-space-sm flex items-center justify-center gap-1.5 rounded text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">delete_outline</span>
+<span>폐기 (-)</span>
+</button>
+<!-- Audit Adjustment (ACTIVE SELECTED TAB) -->
+<button class="py-1.5 px-space-sm flex items-center justify-center gap-1.5 rounded bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-base text-secondary" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<span>실제 실사조정 (±)</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Form Body -->
+<div class="px-space-lg py-space-md flex flex-col gap-space-md overflow-y-auto">
+<!-- PRD D06 Policy Banner -->
+<div class="p-space-md bg-secondary-fixed/50 rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-lg flex-shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col text-on-secondary-fixed">
+<span class="font-label-md text-label-md font-semibold text-secondary">실사 원칙 (PRD D06 정책)</span>
+<p class="font-body-sm text-body-sm leading-relaxed mt-0.5 text-on-secondary-container">
+              운영자가 실제로 센 수량이 확인 시점 이후의 <strong class="font-semibold text-on-secondary-fixed">새로운 기준 재고 잔량</strong>이 됩니다. 기존 장부상 잔량과의 차이 수량은 투명한 사후 감사를 위해 <strong class="font-semibold text-on-secondary-fixed">‘실사조정 내역’</strong>으로 보존됩니다.
+            </p>
+</div>
+</div>
+<!-- 2-Column Responsive Input Grid -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- 1. Audit Target Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>실사 기준 일자</span>
+<span class="text-secondary font-medium">영업 마감 후</span>
+</label>
+<div class="h-[38px] px-space-md bg-surface-container-low rounded-lg flex items-center justify-between text-on-surface">
+<span class="font-numeric-table text-numeric-table font-medium">2026-09-18</span>
+<span class="material-symbols-outlined text-base text-on-surface-variant">calendar_today</span>
+</div>
+</div>
+<!-- 2. Target Raw Material Select -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">대상 원재료 선택</label>
+<div class="h-[38px] px-space-md bg-surface-container-lowest rounded-lg flex items-center justify-between text-on-surface shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-md text-label-md font-semibold text-primary truncate">에스프레소 블렌드 원두</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex-shrink-0">(에이원커피)</span>
+</div>
+<span class="material-symbols-outlined text-base text-on-surface-variant flex-shrink-0">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- Book Ledger vs Physical Count Dynamic Ledger Zone -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="grid grid-cols-2 gap-space-md items-center">
+<!-- 3. Current Book Stock (Read-Only) -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">장부상 기록 잔량 (수불부 기준)</span>
+<div class="h-[38px] px-space-md bg-surface-container rounded-lg flex items-center justify-between">
+<span class="font-numeric-hero text-headline-md text-on-surface-variant font-semibold">3,450</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">g (3.45 kg)</span>
+</div>
+</div>
+<!-- 4. Actual Physical Count Input (Active Focus Highlight) -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1" for="actual-count-input">
+<span>실제 확인(실사) 수량</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</label>
+<span class="font-label-sm text-label-sm text-secondary">저울 실측값</span>
+</div>
+<div class="h-[38px] bg-surface-container-lowest rounded-lg flex items-stretch shadow-sm ring-2 ring-primary">
+<input class="w-full bg-transparent px-space-md text-right font-numeric-hero text-headline-md font-bold text-primary focus:outline-none" id="actual-count-input" type="text" value="3,100">
+<div class="w-12 bg-surface-container flex items-center justify-center font-label-md text-label-md font-semibold text-on-surface-variant select-none">
+                  g
+                </div>
+</div>
+</div>
+</div>
+<!-- 5. Variance Metric Pill Callout -->
+<div class="pt-space-xs flex items-center justify-between bg-error-container/60 p-space-sm rounded-lg text-on-error-container">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-error">trending_down</span>
+<span class="font-label-sm text-label-sm font-semibold">실사 차이 (오차 감모량):</span>
+<span class="font-numeric-table text-numeric-table font-bold text-error">-350 g</span>
+</div>
+<span class="font-body-sm text-body-sm text-error font-medium">장부 대비 350g 부족 (원두 로스 및 샷 테스트 추정)</span>
+</div>
+</div>
+<!-- 6. Audit Reason / Detailed Log Area -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between" for="audit-memo">
+<span>실사 사유 및 변동 상세 메모</span>
+<span class="text-on-surface-variant font-normal">필수 기재 (감사 감사기록 보존)</span>
+</label>
+<textarea class="w-full p-space-sm bg-surface-container-low focus:bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-inner resize-none transition-all" id="audit-memo" placeholder="원두 로스 또는 조정 사유를 상세히 입력하십시오." rows="2">주간 정기 실사 실시. 그라인더 분쇄도 영점 조정 및 신규 바리스타 샷 추출 연습으로 인한 원두 소모분(약 350g) 반영</textarea>
+</div>
+<!-- 7. Real-Time Safety Stock Projection Ledger Card -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-secondary">security</span>
+<span class="font-label-md text-label-md font-semibold text-primary">안전재고 수준 실시간 비교 판정</span>
+</div>
+<!-- Status Badge -->
+<div class="flex items-center gap-1 px-space-sm py-0.5 bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold rounded-lg">
+<span class="material-symbols-outlined text-sm text-secondary">check_circle</span>
+<span>안전 (기준치 대비 +550g 여유)</span>
+</div>
+</div>
+<!-- Mathematical Ledger Grid -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">반영 후 확정 잔량</span>
+<span class="font-numeric-table text-numeric-table font-bold text-primary mt-0.5">3,100 g</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">약 3.6일 소진 가능</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">매장 일평균 소진량</span>
+<span class="font-numeric-table text-numeric-table font-medium text-on-surface mt-0.5">850 g / 일</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">리드타임 2일 (발주 주기)</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">안전재고 기준치</span>
+<span class="font-numeric-table text-numeric-table font-medium text-on-surface mt-0.5">2,550 g</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">최소 보유 권고 (3일분)</span>
+</div>
+</div>
+<!-- Visual Stock Bar Projection -->
+<div class="flex flex-col gap-1 mt-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>위험 기준 (0g)</span>
+<span class="text-secondary font-medium">안전재고선 (2,550g)</span>
+<span class="text-primary font-bold">실사 후 잔량 (3,100g)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex relative">
+<div class="h-full bg-secondary-fixed-dim" style="width: 55%;"></div>
+<div class="h-full bg-secondary" style="width: 15%;"></div>
+<div class="absolute top-0 bottom-0 left-[55%] w-0.5 bg-primary-container z-10"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Action Bar -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">history</span>
+<span>이전 실사 이력 확인</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-10 px-space-md bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-lg shadow-sm transition-colors" type="button">
+            취소
+          </button>
+<button class="h-10 px-space-lg bg-secondary hover:bg-tertiary text-on-secondary font-label-md text-label-md font-semibold rounded-lg shadow-md transition-colors flex items-center gap-1.5" id="commit-audit-btn" type="button">
+<span class="material-symbols-outlined text-base">check</span>
+<span>실사 수량 확정 및 기준 잔량 갱신</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interaction for dynamic variance recalculation
+  (function() {
+    const input = document.getElementById('actual-count-input');
+    const commitBtn = document.getElementById('commit-audit-btn');
+    if (!input || !commitBtn) return;
+
+    input.addEventListener('input', function(e) {
+      const val = parseInt(e.target.value.replace(/[^0-9]/g, ''), 10);
+      if (isNaN(val)) return;
+      e.target.value = val.toLocaleString();
+    });
+
+    commitBtn.addEventListener('click', function() {
+      const originalText = commitBtn.innerHTML;
+      commitBtn.disabled = true;
+      commitBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">refresh</span><span>장부 잔량 갱신 중...</span>';
+      setTimeout(() => {
+        commitBtn.innerHTML = '<span class="material-symbols-outlined text-base">task_alt</span><span>실사 반영 완료 (3,100g)</span>';
+        commitBtn.classList.remove('bg-secondary');
+        commitBtn.classList.add('bg-primary-container');
+        setTimeout(() => {
+          commitBtn.disabled = false;
+          commitBtn.innerHTML = originalText;
+          commitBtn.classList.add('bg-secondary');
+          commitBtn.classList.remove('bg-primary-container');
+        }, 1500);
+      }, 700);
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest py-space-lg mt-space-xl shadow-[0_-1px_4px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter-desktop flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div>프렙 카페(Prep Cafe) 백오피스 엔터프라이즈 시스템 · 단일 로컬 모드</div><div class="flex items-center gap-space-md"><span>영업일: 2026-09-18</span><span>데이터 상태: 무결성 검증됨</span></div></div></footer></body></html>

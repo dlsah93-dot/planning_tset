@@ -1,0 +1,7 @@
+import { useEffect, useRef, type ReactNode } from 'react';
+export function Dialog({title,onClose,children,busy=false}:{title:string;onClose:()=>void;children:ReactNode;busy?:boolean}){
+  const ref=useRef<HTMLDivElement>(null);
+  const latest=useRef({busy,onClose});latest.current={busy,onClose};
+  useEffect(()=>{const previous=document.activeElement as HTMLElement|null;const root=ref.current!;const focusable=()=>Array.from(root.querySelectorAll<HTMLElement>('button:not([disabled]),input:not([disabled]),select:not([disabled]),[tabindex="0"]'));focusable()[0]?.focus();const handler=(e:KeyboardEvent)=>{if(e.key==='Escape'){e.preventDefault();if(!latest.current.busy)latest.current.onClose();}if(e.key==='Tab'){const nodes=focusable();const first=nodes[0],last=nodes.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}}};root.addEventListener('keydown',handler);const oldOverflow=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{root.removeEventListener('keydown',handler);document.body.style.overflow=oldOverflow;previous?.focus();};},[]);
+  return <div className="scrim"><div ref={ref} className="dialog" role="dialog" aria-modal="true" aria-label={title}><header><h2>{title}</h2><button type="button" aria-label="닫기" onClick={onClose} disabled={busy}>×</button></header>{children}</div></div>;
+}

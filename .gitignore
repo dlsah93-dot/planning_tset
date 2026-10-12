@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.env*
+!.env.example
+*.log
+*.tsbuildinfo
+.npm-cache/
+.playwright/
+# 별도 99 Bakery 프로젝트 자료
+/planning/

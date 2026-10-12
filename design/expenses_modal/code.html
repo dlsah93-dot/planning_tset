@@ -1,0 +1,597 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface": "#f8f9ff",
+          "primary-container": "#1e293b",
+          "surface-bright": "#f8f9ff",
+          "primary": "#091426",
+          "on-tertiary-fixed-variant": "#6e3900",
+          "outline": "#75777d",
+          "error": "#ba1a1a",
+          "background": "#f8f9ff",
+          "on-secondary-fixed-variant": "#6a3b19",
+          "on-primary-fixed": "#111c2d",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#ffdcc3",
+          "secondary-fixed-dim": "#fcb88c",
+          "on-tertiary-fixed": "#2f1500",
+          "surface-container": "#e5eeff",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed": "#311300",
+          "secondary-container": "#ffba8e",
+          "on-surface-variant": "#45474c",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#240f00",
+          "surface-container-highest": "#d3e4fe",
+          "primary-fixed-dim": "#bcc7de",
+          "on-primary-container": "#8590a6",
+          "on-tertiary": "#ffffff",
+          "on-secondary-container": "#7a4825",
+          "tertiary-fixed-dim": "#ffb77d",
+          "surface-tint": "#545f73",
+          "inverse-surface": "#213145",
+          "on-primary-fixed-variant": "#3c475a",
+          "secondary-fixed": "#ffdbc7",
+          "on-background": "#0b1c30",
+          "surface-dim": "#cbdbf5",
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "on-tertiary-container": "#d97705",
+          "secondary": "#86522e",
+          "surface-container-high": "#dce9ff",
+          "inverse-primary": "#bcc7de",
+          "surface-container-low": "#eff4ff",
+          "outline-variant": "#c5c6cd",
+          "on-surface": "#0b1c30",
+          "tertiary-container": "#422000",
+          "surface-variant": "#d3e4fe",
+          "inverse-on-surface": "#eaf1ff",
+          "primary-fixed": "#d8e3fb",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "space-lg": "1.25rem",
+          "space-md": "0.75rem",
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "margin-desktop": "2rem",
+          "gutter": "1rem",
+          "space-xl": "2rem",
+          "gutter-desktop": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "numeric-table": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-lg-mobile": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl-mobile": [
+            "Inter"
+          ],
+          "numeric-hero": [
+            "Inter"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-md": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-lg": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "numeric-table": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "1rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "1.25rem",
+            {
+              "lineHeight": "1.75rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "0.75rem",
+            {
+              "lineHeight": "1rem",
+              "letterSpacing": "0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl-mobile": [
+            "1.5rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "numeric-hero": [
+            "1.75rem",
+            {
+              "lineHeight": "2rem",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "2rem",
+            {
+              "lineHeight": "2.5rem",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "0.875rem",
+            {
+              "lineHeight": "1.25rem",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "1.125rem",
+            {
+              "lineHeight": "1.5rem",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-gutter-desktop flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary tracking-tight">프렙 카페</span><span class="font-label-sm text-label-sm text-secondary px-space-xs py-0.5 bg-secondary-fixed rounded-lg font-medium">본점</span></div><div class="h-4 w-px bg-outline-variant"></div><span class="font-label-sm text-label-sm px-space-sm py-0.5 bg-surface-container-high text-on-surface-variant rounded-lg">1매장 · 1사용자 모드</span><div class="flex items-center gap-space-xs px-space-sm py-0.5 bg-surface-container-low text-on-surface-variant rounded-lg"><span class="material-symbols-outlined text-sm text-on-surface-variant">event_available</span><span class="font-numeric-table text-numeric-table">2026-09-18</span><span class="font-label-sm text-label-sm font-semibold text-secondary">(마감완료)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low text-on-surface-variant rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm">로컬 자동저장 됨</span></div><div class="flex items-center gap-space-xs"><button class="flex items-center gap-1 h-9 px-space-md bg-secondary text-on-secondary hover:bg-tertiary font-label-md text-label-md rounded-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-base">add</span><span>판매 기록</span></button><button class="flex items-center gap-1 h-9 px-space-md bg-primary-container text-surface-container-lowest hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-colors" type="button"><span class="material-symbols-outlined text-base">swap_vert</span><span>재고 변동</span></button></div><button class="relative p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WiIOLMkRmja_UFGsGGJRJ5Jd1wktqA6KlC9hU_sWt6EDHcT6qjELQKqEgONOB9fGdwGr9snY2sk9kViQ-x560nCsTK6V20QbJR0P7tuAJXFfkjZ8IHkl_nOmb5zP69pQ8gLrsWbt5tXf9Bf_zhjUcoqJpauwk_UILmO2q49LzQoIHJIT2Qm-ynefLi8zw4g30eC8Itm3c1-eExWN2XBbIMEl6w1SoVCr9v3Jdcz7Xs87a3D0IThu6a7Po"></div></div></div><nav class="flex items-center gap-1 pt-1" data-active-classes="bg-primary-container text-surface-container-lowest font-semibold rounded-lg"><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="dashboard" href="#">대시보드 / 기간손익</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="sales" href="#">판매 기록 관리</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="profitability" href="#">메뉴 수익성 분석</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="expenses" href="#">비용 관리</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="inventory" href="#">재고 &amp; 실사 관리</a><a class="px-space-md py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-colors" data-path="backup" href="#">데이터 백업·복원</a></nav></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full relative">
+<!-- Active Background Page Content (Dimmed & Scaled under Audit Modal) -->
+<div class="w-full px-gutter-desktop py-space-xl flex flex-col gap-space-lg select-none filter blur-[2px] opacity-40 pointer-events-none transition-all duration-300">
+<!-- Top Bar & Controls -->
+<div class="flex items-center justify-between w-full">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-lg text-headline-lg text-primary tracking-tight">비용 관리 및 실적 손익 집행 내역</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">회계 기준원 PRD D05 승인</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">2026년 9월 (당월 마감 실적 : 09.01 ~ 09.18 · 18영업일 누적)</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1.5 h-9 px-space-md bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">pie_chart</span>
+<span>월비용계획 대비 현황</span>
+</button>
+<button class="flex items-center gap-1.5 h-9 px-space-md bg-secondary text-on-secondary font-label-md text-label-md rounded-lg shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>+ 신규 비용 입력</span>
+</button>
+</div>
+</div>
+<!-- 4 High-Density KPI Summary Cards -->
+<div class="grid grid-cols-4 gap-space-md w-full">
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">당월 누적 총 운영비 (8대 항목)</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-numeric-hero text-numeric-hero text-primary font-bold">₩6,850,000</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">60.1%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">월 계획 ₩11,400,000 대비 안정</span>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">고정비 합계 (임차·통신·보험·관리비)</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-numeric-hero text-numeric-hero text-primary font-bold">₩4,200,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">61.3% 비중</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">정기 계좌자동이체 100% 정상 처리</span>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">변동·운영비 합계 (인건·수도·소모·광고)</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-numeric-hero text-numeric-hero text-primary font-bold">₩2,650,000</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">+4.2%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">하절기 냉방 전력비 반영 전</span>
+</div>
+<div class="flex flex-col p-space-md bg-surface-container-lowest rounded-xl shadow-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">일평균 운영비 발생액</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-numeric-hero text-numeric-hero text-secondary font-bold">₩380,555</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 일</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">손익분기 달성 일매출: ₩790,000</span>
+</div>
+</div>
+<!-- 8 Categories Progress Grid Card -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-lg shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-primary">8대 표준 운영비 월간 예산 대비 집행률</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">기준시점: 2026.09.18 23:59 (영업일수 60% 경과)</span>
+</div>
+<div class="grid grid-cols-4 gap-space-md">
+<!-- 1. 임차료 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">1. 임차료 (고정)</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-full"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩2,500,000 / ₩2,500,000</span>
+</div>
+<!-- 2. 인건비 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">2. 인건비 (혼합)</span>
+<span class="text-secondary font-semibold">58.3%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[58.3%]"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩2,100,000 / ₩3,600,000</span>
+</div>
+<!-- 3. 사업주 부담 보험료 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">3. 사업주 4대보험 (고정)</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-full"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩420,000 / ₩420,000</span>
+</div>
+<!-- 4. 관리비 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">4. 상가 관리비 (고정)</span>
+<span class="text-secondary font-semibold">100%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-full"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩480,000 / ₩480,000</span>
+</div>
+<!-- 5. 수도광열비 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1 ring-1 ring-secondary/30">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-secondary">5. 수도광열비 (변동)</span>
+<span class="text-error font-semibold">입력 대기</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline-variant h-full w-0"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩0 / ₩800,000 (0.0%)</span>
+</div>
+<!-- 6. 통신·소프트웨어 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">6. 통신·소프트웨어 (고정)</span>
+<span class="text-secondary font-semibold">89.2%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[89.2%]"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩180,000 / ₩200,000</span>
+</div>
+<!-- 7. 광고홍보비 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">7. 광고홍보비 (변동)</span>
+<span class="text-secondary font-semibold">45.0%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[45%]"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩180,000 / ₩400,000</span>
+</div>
+<!-- 8. 소모품·청소비 -->
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex justify-between items-center text-xs">
+<span class="font-semibold text-primary">8. 소모품·위생 (변동)</span>
+<span class="text-secondary font-semibold">68.7%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[68.7%]"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₩990,000 / ₩1,000,000</span>
+</div>
+</div>
+</div>
+<!-- Background Table Dummy -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="h-10 border-b border-surface-container flex items-center px-space-sm justify-between">
+<span class="font-label-md text-label-md text-primary">최근 지출 전표 내역 (총 38건)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">정렬: 지출일자 최신순</span>
+</div>
+<div class="py-12 flex items-center justify-center text-on-surface-variant font-body-sm text-body-sm">
+        전표 내역 로드 완료 (배경 프리뷰 상태)
+      </div>
+</div>
+</div>
+<!-- Screen Backdrop Scrim (Level 3 Elevation Overlay) -->
+<div class="fixed inset-0 bg-primary/65 backdrop-blur-[5px] z-50 flex items-center justify-center p-4 overflow-y-auto">
+<!-- Central Modal Card Container (Bespoke Financial Ledger Style) -->
+<div class="w-full max-w-[620px] bg-surface-container-lowest rounded-xl shadow-2xl flex flex-col overflow-hidden my-auto animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-lowest flex items-center justify-between shadow-[0_1px_0_rgba(0,0,0,0.06)]">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">비용 기록 등록 및 수정</span>
+<span class="px-space-xs py-0.5 bg-secondary-fixed text-on-secondary-fixed-variant rounded-lg font-label-sm text-label-sm font-medium">손익 귀속 관리</span>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="닫기" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- PRD D05 Policy Notice Banner -->
+<div class="px-space-lg py-space-md bg-surface-container-high flex flex-col gap-1 text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-base mt-0.5 shrink-0">info</span>
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface">
+<strong class="font-semibold text-secondary">비용 귀속 기간 원칙 (PRD D05 회계 정책):</strong> 비용은 실제 현금 지출/송금일과 무관하게 <strong class="text-primary underline decoration-secondary">해당 비용이 영업 효익을 발생시킨 월의 손익에 귀속</strong>됩니다. (예: 9월 전기료를 10월 5일에 납부해도 9월 당월 손익으로 반영)
+          </p>
+</div>
+<div class="flex items-start gap-2 mt-1">
+<span class="material-symbols-outlined text-error text-base mt-0.5 shrink-0">warning</span>
+<p class="font-body-sm text-body-sm text-error font-medium leading-relaxed">
+            주의: '일별 지출 기록'과 '월 비용 계획'은 동일 비용의 집행/계획 단위이므로 손익 계산서 상에서 이중 합산되지 않도록 귀속 연월을 엄격히 구분합니다.
+          </p>
+</div>
+</div>
+<!-- Modal Body (Form Fields) -->
+<div class="p-space-lg flex flex-col gap-space-lg max-h-[calc(88vh-130px)] overflow-y-auto">
+<!-- Field 1: 귀속 연월 vs 실제 지출일 (Dual Period Allocation) -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- 귀속 연월 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-primary">비용 귀속 연월 (손익 산정월)</label>
+<span class="font-label-sm text-label-sm text-secondary font-bold">당월 손익 반영</span>
+</div>
+<div class="relative flex items-center">
+<select class="w-full h-[38px] px-3 pr-8 bg-surface-container-low text-primary font-numeric-table text-numeric-table rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest appearance-none cursor-pointer">
+<option selected="" value="2026-09">2026년 09월 (당월)</option>
+<option value="2026-08">2026년 08월 (전월 이월분)</option>
+<option value="2026-10">2026년 10월 (선급 비용)</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-base absolute right-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- 실제 지출일자 -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">실제 지출일 (결제/이체일)</label>
+<div class="relative flex items-center">
+<input class="w-full h-[38px] px-3 pr-8 bg-surface-container-low text-primary font-numeric-table text-numeric-table rounded-lg shadow-sm focus:outline-none cursor-default" readonly="" type="text" value="2026-09-18">
+<span class="material-symbols-outlined text-secondary text-base absolute right-2.5">event</span>
+</div>
+</div>
+</div>
+<!-- Field 2: 8대 표준 운영비 카테고리 셀렉터 -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-primary">비용 항목 (8대 표준 운영비)</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PRD 지정 계정과목</span>
+</div>
+<!-- Selected Dropdown -->
+<div class="relative flex items-center">
+<div class="w-full h-[40px] px-3 flex items-center justify-between bg-surface-container-low rounded-lg shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-primary font-semibold">⚡ 5. 수도광열비 (전기·가스·수도요금)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">변동비</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-base">unfold_more</span>
+</div>
+</div>
+<!-- Category Quick Selection Chips (8 Standard Categories) -->
+<div class="grid grid-cols-4 gap-1.5 pt-1">
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              1. 임차료
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              2. 인건비
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              3. 4대보험
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              4. 관리비
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-primary-container text-surface-container-lowest font-label-sm text-label-sm truncate text-left font-semibold shadow-xs" type="button">
+              5. 수도광열비 ✓
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              6. 통신·SW
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              7. 광고홍보비
+            </button>
+<button class="px-2 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm truncate text-left" type="button">
+              8. 소모품·청소
+            </button>
+</div>
+</div>
+<!-- Field 3: 지출 금액 (Tabular High-Precision Input) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-primary">지출 금액 (VAT 별도 손익 원가)</label>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">부가세 매입세액 공제 대상</span>
+</div>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-numeric-hero text-numeric-hero text-secondary font-bold">₩</span>
+<input class="w-full h-[46px] pl-9 pr-14 bg-surface-container-low text-primary font-numeric-hero text-numeric-hero font-bold rounded-lg shadow-sm focus:outline-none focus:bg-surface-container-lowest tracking-tight text-right" type="text" value="685,000">
+<div class="absolute right-0 top-0 bottom-0 px-3 bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant font-semibold rounded-r-lg">
+              원
+            </div>
+</div>
+<!-- Quick Increment Chips -->
+<div class="flex items-center gap-1.5 pt-0.5 justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">빠른 금액:</span>
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">+ 10만</button>
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">+ 50만</button>
+<button class="px-2 py-1 rounded bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm" type="button">+ 100만</button>
+<button class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold" type="button">예산전액(80만)</button>
+</div>
+</div>
+<!-- Field 4: 지급 수단 및 거래처 -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">지급 수단</label>
+<div class="relative flex items-center">
+<select class="w-full h-[38px] px-3 pr-8 bg-surface-container-low text-primary font-body-md text-body-md rounded-lg shadow-sm focus:outline-none appearance-none">
+<option selected="">계좌이체 (신한은행 사업자계좌)</option>
+<option>사업용 신용카드 (현대 3892)</option>
+<option>현금영수증 지출증빙</option>
+<option>세금계산서 청구(후불)</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-base absolute right-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-semibold text-primary">거래처 (수취인명)</label>
+<input class="w-full h-[38px] px-3 bg-surface-container-low text-primary font-body-md text-body-md rounded-lg shadow-sm focus:outline-none" type="text" value="한국전력공사 강남지사">
+</div>
+</div>
+<!-- Field 5: 적요 및 회계 상세 메모 -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-primary">적요 및 상세 비고</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant">감사 추적용 증빙 기록</span>
+</div>
+<textarea class="w-full p-2.5 bg-surface-container-low text-primary font-body-md text-body-md rounded-lg shadow-sm focus:outline-none resize-none leading-relaxed" rows="2">2026년 8월 하순~9월 중순 여름철 냉방기 풀가동으로 인한 전기요금 정산분 (전월 대비 사용량 +12% 증가, 계약전력 15kW 적용)</textarea>
+</div>
+<!-- Field 6: Real-time Budget Progress Preview Widget -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm shadow-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">monitoring</span>
+<span class="font-label-md text-label-md text-primary font-semibold">9월 수도광열비 예산 대비 실시간 집행 분석</span>
+</div>
+<span class="px-2 py-0.5 rounded-lg bg-surface-container-highest font-label-sm text-label-sm text-secondary font-bold">집행률 85.6% (안정)</span>
+</div>
+<!-- Progress Bar Indicator -->
+<div class="w-full bg-surface-container-highest h-2.5 rounded-full overflow-hidden flex">
+<!-- Current: 0% previously -> Now 85.6% with this transaction -->
+<div class="bg-secondary h-full transition-all duration-300" style="width: 85.6%"></div>
+</div>
+<!-- Ledger Variance Breakdown -->
+<div class="grid grid-cols-4 gap-2 pt-1 text-center font-numeric-table text-numeric-table">
+<div class="flex flex-col bg-surface-container-lowest p-2 rounded-lg">
+<span class="text-on-surface-variant font-label-sm text-label-sm">당월 계획 예산</span>
+<span class="font-bold text-primary mt-0.5">₩800,000</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-2 rounded-lg">
+<span class="text-on-surface-variant font-label-sm text-label-sm">기존 누적 집행</span>
+<span class="font-bold text-on-surface-variant mt-0.5">₩0</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-2 rounded-lg ring-1 ring-secondary/20">
+<span class="text-secondary font-label-sm text-label-sm font-semibold">반영 후 누적</span>
+<span class="font-bold text-secondary mt-0.5">₩685,000</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-2 rounded-lg">
+<span class="text-on-surface-variant font-label-sm text-label-sm">잔여 집행 가능액</span>
+<span class="font-bold text-primary mt-0.5">₩115,000</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer Action Controls -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between shadow-[0_-1px_0_rgba(0,0,0,0.06)]">
+<button class="flex items-center gap-1.5 h-9 px-space-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface rounded-lg font-label-md text-label-md shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-base">history</span>
+<span>이전 비용 내역 확인</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md bg-surface-container text-on-surface hover:bg-surface-container-high rounded-lg font-label-md text-label-md transition-colors" type="button">
+            취소
+          </button>
+<button class="flex items-center gap-1.5 h-10 px-space-lg bg-secondary text-on-secondary hover:bg-tertiary rounded-lg font-label-md text-label-md font-bold shadow-md transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+<span>비용 기록 저장 및 손익 반영</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interaction for rapid category chip selection & calculation preview
+  document.addEventListener('DOMContentLoaded', () => {
+    const amountInput = document.querySelector('input[value="685,000"]');
+    if (amountInput) {
+      amountInput.addEventListener('focus', () => {
+        amountInput.select();
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest py-space-lg mt-space-xl shadow-[0_-1px_4px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter-desktop flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div>프렙 카페(Prep Cafe) 백오피스 엔터프라이즈 시스템 · 단일 로컬 모드</div><div class="flex items-center gap-space-md"><span>영업일: 2026-09-18</span><span>데이터 상태: 무결성 검증됨</span></div></div></footer></body></html>
