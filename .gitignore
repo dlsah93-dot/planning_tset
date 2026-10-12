@@ -10,3 +10,4 @@ playwright-report/
 .playwright/
 # 별도 99 Bakery 프로젝트 자료
 /planning/
+.vercel/

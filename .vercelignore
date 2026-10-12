@@ -1,0 +1,9 @@
+planning/
+date/
+design/
+docs/
+.playwright/
+.npm-cache/
+test-results/
+playwright-report/
+.env*
